@@ -23,7 +23,7 @@ import main_t3
 import ans_main_t3
 from k3.main import K3
 
-rfu = record.record_for_u
+
 
 def start():
 	#日付の指定
@@ -46,7 +46,7 @@ def start():
 	
 	#履歴(ユーザー)の作成
 	#引数'u'はユーザー入力を示す
-	rfu(st)
+	record.rfu(st)
 
 
 	#データを格納する辞書の作成
@@ -67,7 +67,7 @@ def start():
 
 	if data['category'] == 'why' or data['category'] == 'how':
 		print('>category is why or how')
-		rfs('>スタッフの方に引き継ぎます。')
+		record.rfs('>スタッフの方に引き継ぎます。')
 		#終了
 		record.record_A('----- conversation end   -----')
 		#履歴の表示

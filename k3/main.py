@@ -10,7 +10,9 @@ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 
 mysql.server start
-mysql -u root
+(sudo mysql.server start)
+mysql -u root 
+(mysql -u root -p)
 
  # ここから、起動したMySQL上で入力
 -- 新しくデータベースを作成する

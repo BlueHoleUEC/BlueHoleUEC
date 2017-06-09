@@ -11,6 +11,8 @@ import sys
 import MeCab
 
 
+
+
 def mecab_general_noun_get(text):
         #一般(固有)名詞の獲得
         #MeCab
